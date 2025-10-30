@@ -9,7 +9,7 @@ function Testimonals() {
         Testimonials
       </h1>
 
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="flex flex-wrap justify-center gap-6 ">
         {test.map((item, i) => (
           <div
             key={i}

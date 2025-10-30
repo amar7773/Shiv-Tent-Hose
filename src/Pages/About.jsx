@@ -1,14 +1,14 @@
 import React from "react";
 import aboutImg from "../assets/images/Services/wedddeco.webp"; // Add your about image
 import aboutTeam from "../assets/images/Services/haldidecoration.jpg";
-import aboutHero from "../assets/images/Services/abouthero.webp"; // Add team image
+import aboutHero from "../assets/images/Services/bluetetnt.webp"; // Add team image
 
 function About() {
   return (
     <div className="bg-gradient-to-b from-blue-50 to-white text-gray-800 mt-22">
       {/* ===== Hero Section ===== */}
       <section
-        className="relative text-center py-20 px-4 flex items-center justify-center bg-cover bg-center"
+        className="relative text-center h-[300px] md:h-[400px] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage: `url(${aboutHero})`, // 👈 imported background image
         }}

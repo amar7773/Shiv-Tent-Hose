@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import allgallery from "../Data/allgallery";
-import img from "../assets/images/Services/weddingdecoration.webp";
+import img from "../assets/images/Services/bluetetnt.webp";
 
 function AllGallery() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -9,7 +9,7 @@ function AllGallery() {
     <div className="bg-gray-50 min-h-screen mt-22">
       {/* 🔹 Hero Section */}
       <div
-        className="relative h-[250px] sm:h-[350px] bg-cover bg-center flex items-center justify-center"
+        className="relative h-[300px] md:h-[400px] bg-cover bg-center flex items-center justify-center"
         style={{
           backgroundImage: `url(${img})`,
         }}

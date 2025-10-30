@@ -6,7 +6,7 @@ import { SlSocialFacebook } from "react-icons/sl";
 import { RiTwitterXLine } from "react-icons/ri";
 import { SlSocialYoutube } from "react-icons/sl";
 import { useNavigate } from "react-router-dom";
-import logo from "../assets/images/Services/shiv-tent.png"; // 🟢 Apna logo yahan import karo
+import logo from "../assets/images/Services/tentlogo.png"; // 🟢 Apna logo yahan import karo
 
 function Footer() {
   const navigate = useNavigate();
@@ -91,20 +91,7 @@ function Footer() {
               <a
                 href="#"
                 className="hover:text-blue-600 transition-colors"
-                onClick={() => {
-                  if (window.location.pathname === "/") {
-                    document
-                      .getElementById("gallery")
-                      ?.scrollIntoView({ behavior: "smooth" });
-                  } else {
-                    navigate("/");
-                    setTimeout(() => {
-                      document
-                        .getElementById("gallery")
-                        ?.scrollIntoView({ behavior: "smooth" });
-                    }, 500);
-                  }
-                }}
+                onClick={() => navigate("/gallery")}
               >
                 Gallery
               </a>

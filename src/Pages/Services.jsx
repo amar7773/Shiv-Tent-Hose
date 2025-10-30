@@ -1,6 +1,6 @@
 import React from "react";
 import services from "../Data/servicesdata";
-import img from "../assets/images/Services/serviceshero.jpg";
+import img from "../assets/images/Services/bluetetnt.webp";
 function Services() {
   return (
     <div className="w-full mt-25">

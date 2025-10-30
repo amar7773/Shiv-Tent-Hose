@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import { HiBars3 } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
 import { useNavigate } from "react-router-dom";
-import logo from "../assets/images/Services/shiv-tent.png"; // ✅ apne logo ka sahi path lagaye
+import logo from "../assets/images/Services/tentlogo.png"; // ✅ apne logo ka sahi path lagaye
 
 function Header() {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate("");
 
   return (
-    <div className="fixed top-0 left-0 w-full h-[100px] z-[1000] bg-blue-200 text-black font-semibold flex justify-between items-center px-4 shadow-md md:px-8 md:mb-8">
+    <div className="fixed top-0 left-0 w-full h-[100px] z-[1000] bg-blue-200 text-black font-semibold flex justify-between items-center px-4 shadow-md md:px-8 md:mb-8 cursor-pointer">
       {/* ✅ Logo + Brand Name */}
       <div
         className="flex items-center gap-3 cursor-pointer"
@@ -27,39 +27,32 @@ function Header() {
 
       {/* ✅ Desktop Menu */}
       <ul className="hidden md:flex justify-center items-center gap-10 text-[22px] text-black font-semibold tracking-widest">
-        <li className="hover:text-gray-500" onClick={() => navigate("/")}>
+        <li
+          className="hover:bg-blue-600 hover:text-white hover:px-2 hover:py-1 hover:rounded-md"
+          onClick={() => navigate("/")}
+        >
           Home
         </li>
-        <li className="hover:text-gray-500" onClick={() => navigate("/about")}>
+        <li
+          className="hover:bg-blue-600 hover:text-white hover:px-2 hover:py-1 hover:rounded-md"
+          onClick={() => navigate("/about")}
+        >
           About
         </li>
         <li
-          className="hover:text-gray-500"
+          className="hover:bg-blue-600 hover:text-white hover:px-2 hover:py-1 hover:rounded-md"
           onClick={() => navigate("/services")}
         >
           Services
         </li>
         <li
-          className="hover:text-gray-500"
-          onClick={() => {
-            if (window.location.pathname === "/") {
-              document
-                .getElementById("gallery")
-                ?.scrollIntoView({ behavior: "smooth" });
-            } else {
-              navigate("/");
-              setTimeout(() => {
-                document
-                  .getElementById("gallery")
-                  ?.scrollIntoView({ behavior: "smooth" });
-              }, 500);
-            }
-          }}
+          className="hover:bg-blue-600 hover:text-white hover:px-2 hover:py-1 hover:rounded-md"
+          onClick={() => navigate("/gallery")}
         >
           Gallery
         </li>
         <li
-          className="hover:text-gray-500"
+          className="hover:bg-blue-600 hover:text-white hover:px-2 hover:py-1 hover:rounded-md"
           onClick={() => navigate("/contact")}
         >
           Contact
@@ -130,25 +123,7 @@ function Header() {
           >
             Services
           </li>
-          <li
-            onClick={() => {
-              setOpen(false);
-              if (window.location.pathname === "/") {
-                document
-                  .getElementById("gallery")
-                  ?.scrollIntoView({ behavior: "smooth" });
-              } else {
-                navigate("/");
-                setTimeout(() => {
-                  document
-                    .getElementById("gallery")
-                    ?.scrollIntoView({ behavior: "smooth" });
-                }, 500);
-              }
-            }}
-          >
-            Gallery
-          </li>
+          <li onClick={() => navigate("/gallery")}>Gallery</li>
           <li
             onClick={() => {
               navigate("/contact");
