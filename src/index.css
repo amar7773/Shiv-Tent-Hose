@@ -1,0 +1,26 @@
+@import "tailwindcss";
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: white !important;
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background: blue !important;
+  opacity: 1;
+}
+
+/* Swiper navigation arrows size */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+  transform: scale(0.5); /* arrows ko chhota kiya */
+}
+
+@media (max-width: 640px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    transform: scale(0.2); /* mobile pe aur chhote */
+  }
+}
