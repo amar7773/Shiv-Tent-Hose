@@ -5,7 +5,7 @@ import { FaRegUser } from "react-icons/fa6";
 function Testimonals() {
   return (
     <div className="mt-10 mb-5 sm:mb-15 sm:mt-15 px-4">
-      <h1 className="text-[30px] sm:text-[40px] font-semibold text-center mb-10 tracking-widest">
+      <h1 className="text-[30px] sm:text-[40px] font-bold text-center mb-10 tracking-widest">
         Testimonials
       </h1>
 

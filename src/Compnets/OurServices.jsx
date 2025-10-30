@@ -5,7 +5,7 @@ function OurServices() {
   const navigate = useNavigate();
   return (
     <div className="mt-5 sm:mt-10">
-      <h1 className="text-[30px] sm:text-[40px] font-semibold text-center tracking-widest">
+      <h1 className="text-[30px] sm:text-[40px] font-bold text-center tracking-widest">
         Our Services
       </h1>
       <div className="flex flex-nowrap gap-7 md:gap-20 mt-5 sm:mt-10 items-center xl:justify-center overflow-x-auto px-4">

@@ -7,13 +7,13 @@ function Gallery() {
 
   return (
     <div id="gallery" className="mt-7 sm:mt-15 px-4">
-      <h1 className="text-[30px] sm:text-[40px] font-semibold text-center mb-10 tracking-widest">
+      <h1 className="text-[30px] sm:text-[40px] font-bold text-center mb-10 tracking-widest">
         Our Gallery
       </h1>
 
       {/* ✅ Mobile: horizontal scroll | Desktop: grid wrap */}
       <div className="flex flex-nowrap sm:flex-wrap gap-6 overflow-x-auto sm:overflow-visible justify-start sm:justify-center px-2 pb-4">
-        {gallery.slice(0, 6).map(
+        {gallery.slice(0, 7).map(
           (
             item,
             i // ✅ sirf 6 images show on home

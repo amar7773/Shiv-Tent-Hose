@@ -1,6 +1,6 @@
 import React from "react";
-import aboutImg from "../Assets/images/Services/wedddeco.webp"; // Add your about image
-import aboutTeam from "../Assets/images/Services/haldidecoration.jpg";
+import aboutImg from "../assets/images/Services/wedddeco.webp"; // Add your about image
+import aboutTeam from "../assets/images/Services/haldidecoration.jpg";
 import aboutHero from "../assets/images/Services/abouthero.webp"; // Add team image
 
 function About() {

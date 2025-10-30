@@ -29,7 +29,7 @@ function WhyChoose() {
     <section className="py-16 px-4 bg-gray-50 sm:mt-10">
       {/* Heading */}
       <div className="text-center mb-10">
-        <h2 className="text-[28px] sm:text-[38px] font-bold text-black tracking-wide mb-3">
+        <h2 className="text-[28px] sm:text-[38px] font-bold text-black tracking-widest mb-3">
           Why Choose <span className="text-blue-600">Us?</span>
         </h2>
         <p className="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">
@@ -43,7 +43,7 @@ function WhyChoose() {
         {features.map((item, i) => (
           <div
             key={i}
-            className="min-w-[220px] sm:min-w-0 bg-blue-200 p-5 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 text-center flex-shrink-0 border border-gray-100"
+            className="min-w-[220px] sm:min-w-0 bg-blue-200 p-10 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 text-center flex-shrink-0 border border-gray-100"
           >
             <div className="flex justify-center mb-3">{item.icon}</div>
             <h3 className="text-lg font-semibold text-blue-900 mb-1">
