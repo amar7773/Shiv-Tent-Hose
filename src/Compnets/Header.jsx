@@ -123,7 +123,14 @@ function Header() {
           >
             Services
           </li>
-          <li onClick={() => navigate("/gallery")}>Gallery</li>
+          <li
+            onClick={() => {
+              navigate("/gallery");
+              setOpen(false);
+            }}
+          >
+            Gallery
+          </li>
           <li
             onClick={() => {
               navigate("/contact");
