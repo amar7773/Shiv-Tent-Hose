@@ -7,10 +7,12 @@ import Footer from "./Compnets/Footer";
 import Contact from "./Pages/Contact";
 import Services from "./Pages/Services";
 import AllGallery from "./Pages/AllGallery";
+import ScrolltoTop from "./Pages/ScrolltoTop";
 
 function App() {
   return (
     <div>
+      <ScrolltoTop />
       <Routes>
         <Route path="/" element={<Home />} />
 
