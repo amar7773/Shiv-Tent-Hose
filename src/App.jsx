@@ -8,6 +8,7 @@ import Contact from "./Pages/Contact";
 import Services from "./Pages/Services";
 import AllGallery from "./Pages/AllGallery";
 import ScrolltoTop from "./Pages/ScrolltoTop";
+import Pacages from "./Pages/Pacages";
 
 function App() {
   return (
@@ -52,6 +53,16 @@ function App() {
             <>
               <Header />
               <AllGallery />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="//packeges"
+          element={
+            <>
+              <Header />
+              <Pacages />
               <Footer />
             </>
           }

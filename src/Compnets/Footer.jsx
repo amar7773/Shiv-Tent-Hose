@@ -106,6 +106,15 @@ function Footer() {
               </a>
             </li>
             <li>
+              <a
+                href="#"
+                className="hover:text-blue-600 transition-colors"
+                onClick={() => navigate("/packeges")}
+              >
+                Packages
+              </a>
+            </li>
+            <li>
               <a href="#" className="hover:text-blue-600 transition-colors">
                 Privacy Policy
               </a>

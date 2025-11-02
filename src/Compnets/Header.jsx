@@ -26,7 +26,7 @@ function Header() {
       </div>
 
       {/* ✅ Desktop Menu */}
-      <ul className="hidden md:flex justify-center items-center gap-10 text-[22px] text-black font-semibold tracking-widest">
+      <ul className="hidden md:flex justify-center items-center gap-7 text-[22px] text-black font-semibold tracking-widest">
         <li
           className="hover:bg-blue-600 hover:text-white hover:px-2 hover:py-1 hover:rounded-md"
           onClick={() => navigate("/")}
@@ -56,6 +56,12 @@ function Header() {
           onClick={() => navigate("/contact")}
         >
           Contact
+        </li>
+        <li
+          className="hover:bg-blue-600 hover:text-white hover:px-2 hover:py-1 hover:rounded-md"
+          onClick={() => navigate("/packeges")}
+        >
+          Packages
         </li>
       </ul>
 
@@ -138,6 +144,14 @@ function Header() {
             }}
           >
             Contact Us
+          </li>
+          <li
+            onClick={() => {
+              navigate("/packeges");
+              setOpen(false);
+            }}
+          >
+            Packages
           </li>
         </ul>
       </div>
